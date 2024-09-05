@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>CBF - Seleção Brasileira</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <div class="container-fluid d-flex flex-column mb-4">
+        <header class="cabecalho container-fluid col-12 d-flex justify-content-between align-items-center">
+            <img src="https://logodownload.org/wp-content/uploads/2017/11/cbf-logo-selecao-logo-brasil.png"
+                alt="cbf-logo" class="cbf-logo img-fluid ms-3 ms-sm-4" width="50px">
+            <button onclick="alternarMenu()"
+                class="botao-menu d-flex align-items-center justify-content-center text-white h-100 p-4">☰</button>
+        </header>
+        <nav id="menu-nav" class="navegacao container-fluid oculto">
+            <ul class="container list-group d-flex flex-row justify-content-center align-items-center col-12">
+                <li class="list-group-item border-0 px-md-4">
+                    <a href="#" class="link-underline link-underline-opacity-0" data-section="sobre">SOBRE</a>
+                </li>
+                <li class="list-group-item border-0 px-md-4">
+                    <a href="#" class="link-underline link-underline-opacity-0" data-section="historia">HISTÓRIA</a>
+                </li>
+                <li class="list-group-item border-0 px-md-4">
+                    <a href="#" class="link-underline link-underline-opacity-0" data-section="uniforme">UNIFORME</a>
+                </li>
+                <li class="list-group-item border-0 px-md-4">
+                    <a href="#" class="link-underline link-underline-opacity-0" data-section="titulos">TÍTULOS</a>
+                </li>
+                <li class="list-group-item border-0 px-md-4">
+                    <a href="#" class="link-underline link-underline-opacity-0" data-section="pele">PELÉ</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="theme-container d-flex justify-content-center">
+            <button id="theme-toggle" class="btn btn-primary d-flex justify-content-center w-25 mt-3">Alterar
+                Tema</button>
+        </div>
+    </div>
+
+    <main class="container-fluid d-flex justify-content-center align-items-center flex-grow-1 mb-4">
+        <div id="sobre" class="sobre conteudo text-center">
+            <h2 class="py-3">SOBRE</h2>
+            <p>A Seleção Brasileira de Futebol, comumente chamada de Canarinho, é mais do que apenas uma equipe
+                esportiva — é um ícone nacional e global. Fundada em 1914, a Seleção transcende as fronteiras do campo,
+                representando a paixão, a alegria e o talento inigualável do futebol brasileiro. Administrada pela
+                Confederação Brasileira de Futebol (CBF), a Seleção Brasileira tornou-se sinônimo de excelência,
+                conquistando os corações de torcedores em todas as partes do mundo e criando uma história repleta de
+                triunfos e heróis inesquecíveis.</p>
+
+            <h3 class="py-3">Missão e Visão</h3>
+            <p>Com uma missão clara de levar o nome do Brasil ao topo do futebol mundial, a Seleção Brasileira busca
+                representar o país com honra, disciplina e um espírito indomável de competição. Nossa visão é continuar
+                sendo um farol de sucesso no cenário esportivo global, mantendo viva a chama da paixão pelo futebol que
+                inspira não apenas os brasileiros, mas também milhões de admiradores em todo o planeta.</p>
+
+            <h3 class="py-3">Legado e Ídolos</h3>
+            <p>A história da Seleção Brasileira é marcada por lendas do futebol, cujos feitos e habilidades continuam a
+                ecoar pelos tempos. Pelé, Zico, Romário, Ronaldo, Rivaldo, Ronaldinho Gaúcho e Neymar são alguns dos
+                nomes que construíram um legado de grandeza, transformando a Seleção em um símbolo de arte e magia no
+                futebol. Cada gol, cada jogada e cada vitória ajudaram a esculpir uma narrativa de sucesso que segue
+                inspirando novas gerações de atletas e fãs.</p>
+
+            <div class="row pt-3">
+                <div class="col-md-6">
+                    <figure>
+                        <img src="https://diariodonordeste.verdesmares.com.br/image/contentid/policy:7.4532229:1623957877/Neymar.jpg?f=16x9&$p$f=7ed420b"
+                            alt="Neymar" class="img-fluid img-border" width="90%">
+                        <figcaption>Neymar após ter conquistado o primeiro ouro olímpico da história do Brasil.
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-6">
+                    <figure>
+                        <img src="https://lncimg.lance.com.br/cdn-cgi/image/width=828,quality=75,fit=pad,format=webp/uploads/2017/06/14/5941967abf6b2.jpeg"
+                            alt="Romário" class="img-fluid img-border" width="90%">
+                        <figcaption>Romário comemorando o título da Copa do Mundo de 1994.</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <h3 class="py-3">Nosso Compromisso</h3>
+            <p>O compromisso da Seleção Brasileira vai além das vitórias; ele reside na dedicação incansável para manter
+                a tradição de futebol arte, jogando com paixão, integridade e respeito. Com cada jogo, renovamos nossa
+                promessa de continuar encantando o mundo e proporcionando momentos inesquecíveis para nossos torcedores,
+                mantendo viva a essência do que significa vestir a camisa verde e amarela.</p>
+        </div>
+
+        <div id="historia" class="historia conteudo text-center d-none">
+            <h2 class="py-3">HISTÓRIA</h2>
+            <h3 class="py-3">Pré-Seleção</h3>
+            <p>Entre 1903 e 1913, o futebol já se encontrava em franca ascensão, principalmente nas cidades de São Paulo
+                e do Rio de Janeiro, e diversos clubes e combinados estrangeiros de Argentina, Chile, Uruguai,
+                Inglaterra, Itália e Portugal vieram ao Brasil disputar partidas amistosas contra combinados estaduais
+                paulistas, cariocas e até baiano, que muitas vezes contavam com jogadores estrangeiros que atuavam nos
+                times e mesmo alguns combinados nacionais, estes formados unicamente por jogadores brasileiros.</p>
+            <h3 class="py-3">Formação</h3>
+            <p>A Seleção Brasileira foi formada pela primeira vez em 21 de julho de 1914. Fez seu primeiro jogo contra o
+                Exeter City, da Inglaterra, no campo do Fluminense Football Club, em 21 de julho daquele ano. O
+                resultado da partida é disputado. Algumas fontes afirmam que o Exeter perdeu por 2 a 0 para o Brasil,
+                com gols de Oswaldo Gomes e Osman, enquanto outras afirmam um empate de 3 a 3,particularmente na mídia
+                inglesa à época. A equipe jogou ainda naquele ano em dois jogos contra a Seleção Argentina, sendo um
+                amistoso em 20 de setembro e outro oficialmente, valendo a Copa Roca em 27 de setembro, competição que
+                visava a aproximar mais estes dois países. O Brasil venceu por 1 a 0 em Buenos Aires, consagrando-se
+                campeão do torneio, sendo esse o primeiro de vários títulos conquistados pela seleção Canarinho.</p>
+            <figure class="pt-3">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Brazil_v_exeter_city.jpg"
+                    alt="Brasil x Exeter City" class="img-fluid img-border">
+                <figcaption>Brasil x Exeter City - 1914</figcaption>
+            </figure>
+            <h3 class="py-3">Primeiro Título</h3>
+            <p>O primeiro título relevante conquistado pela Seleção Brasileira foi o Campeonato Sul-Americano de 1919,
+                atual Copa América, com Friedenreich marcando o gol do título sobre o Uruguai, no Estádio das
+                Laranjeiras construído pelo Fluminense para esta ocasião, já que o governo brasileiro não tinha o
+                dinheiro para financiar este evento internacional. Em 1922, o Fluminense ampliou o seu estádio e a
+                Seleção Brasileira conquistou o segundo título relevante de sua história, o bicampeonato do Sul
+                Americano de Seleções. O Brasil é a única seleção a estar presente em todas as edições da Copa do Mundo.
+            </p>
+            <figure class="pt-3">
+                <img src="https://s2-ge.glbimg.com/3xqCAy1fJrNHp9QIHlCZbsxRmgg=/0x0:910x644/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2019/N/F/vMxxbpTG2yAHYlTMjToQ/sul19.jpg"
+                    alt="Time Sul-Americano 1919" class="img-fluid img-border">
+                <figcaption>Time Campeão do Sul-Americano - 1919</figcaption>
+            </figure>
+        </div>
+
+        <div id="uniforme" class="uniforme conteudo text-center d-none">
+            <h2 class="py-3">UNIFORMES</h2>
+            <h3 class="py-3">Uniforme 1</h3>
+            <p>O uniforme atual da Seleção Brasileira mantém as tradições que a tornaram icônica no mundo do futebol. A
+                camisa principal é amarela, com detalhes verdes nas mangas e na gola, representando as cores da bandeira
+                nacional. Os shorts são azuis, complementando o visual clássico, e as meias brancas com detalhes verdes
+                e amarelos completam o conjunto. Este uniforme simboliza a alegria, a paixão e a excelência que definem
+                o futebol brasileiro, mantendo-se fiel à herança da equipe enquanto incorpora materiais e designs
+                modernos para oferecer o máximo desempenho aos jogadores em campo.</p>
+            <figure class="pt-3">
+                <img src="https://sobradeestoque.com.br/wp-content/uploads/2024/05/camisa-oficial-selecao-brasileira.jpg"
+                    alt="Uniforme 1 - Brasil" class="img-fluid img-border" width="90%">
+                <figcaption>Uniforme 1 - Brasil</figcaption>
+            </figure>
+            <h3 class="py-3">Uniforme 2</h3>
+            <p>O uniforme 2 da Seleção Brasileira é uma homenagem ao estilo e à história do time, com a tradicional
+                camisa azul. Este uniforme alternativo destaca-se pela cor vibrante, que é complementada por detalhes em
+                branco e verde, criando um visual elegante e imponente. Os shorts brancos e as meias azuis completam o
+                conjunto, reforçando a identidade visual que diferencia o Brasil em competições internacionais. Este
+                uniforme não apenas simboliza a tradição, mas também exala a confiança e a criatividade características
+                do futebol brasileiro, mantendo a conexão com as conquistas históricas da seleção.</p>
+            <figure class="pt-3">
+                <img src="https://acdn.mitiendanube.com/stores/001/876/620/products/camisa-selecao-brasileira-brasil-away-ii-azul-uniforme-reserva-24-25-2024-2025-masculina-modelo-torcedor-fan-neymar-vini-jr-vinicius-rodrygo-richarlisson-bruno-guimaraes-marquinhos-endrick-paqueta-1-6fa444869cc04f2bb717121551995196-1024-1024.jpg"
+                    alt="Uniforme 2 - Brasil" class="img-fluid img-border" width="90%">
+                <figcaption>Uniforme 2 - Brasil</figcaption>
+            </figure>
+            <h3 class="py-3">Uniforme de goleiro</h3>
+            <p>O uniforme atual de goleiro da Seleção Brasileira combina funcionalidade e estilo, destacando-se por sua
+                cor predominante, geralmente em tons de verde ou preto, que contrasta com o uniforme dos jogadores de
+                linha. O design é moderno, com detalhes que garantem conforto e mobilidade, essenciais para o desempenho
+                do goleiro em campo. A camisa inclui mangas longas para proteção adicional, e o material utilizado é
+                leve e respirável, ajudando a regular a temperatura corporal durante as partidas. Esse uniforme reflete
+                a importância do goleiro na equipe, equilibrando tradição e inovação.</p>
+            <figure class="pt-3">
+                <img src="https://acdn.mitiendanube.com/stores/001/775/982/products/ff9349e1-4efb70a5be597bc87d17118062818103-1024-1024.jpg"
+                    alt="Uniforme de Goleiro - Brasil" class="img-fluid img-border" width="90%">
+                <figcaption>Uniforme de Goleiro - Brasil</figcaption>
+            </figure>
+            <h3 class="py-3">Primeiro Uniforme da História da Seleção</h3>
+            <p>O primeiro uniforme da história da Seleção Brasileira, utilizado em 1914, era bem diferente do icônico
+                uniforme amarelo que conhecemos hoje. A camisa era branca com um colarinho azul, os shorts eram brancos,
+                e as meias eram pretas. Esse design simples refletia a época e não carregava as cores da bandeira
+                nacional. Esse uniforme foi utilizado até 1953, quando o Brasil adotou as cores verde e amarelo após uma
+                competição de design, resultando no uniforme que se tornou um símbolo global do futebol brasileiro.
+            <figure class="pt-3">
+                <img src="https://acdn.mitiendanube.com/stores/118/472/products/1914-escudo1-90ecb7c4d96cd9702916487635987686-640-0.jpg"
+                    alt="Uniforme - Brasil 1914" class="img-fluid img-border" width="90%">
+                <figcaption>Uniforme - Brasil 1914</figcaption>
+            </figure>
+            </p>
+        </div>
+
+        <div id="titulos" class="titulos conteudo text-center d-none">
+            <h2 class="py-3">TÍTULOS</h2>
+            <h3 class="py-3">Copa do Mundo</h3>
+            <p>A Seleção Brasileira de Futebol é a mais bem-sucedida da história das Copas do Mundo, com cinco títulos.
+                A primeira conquista foi em 1958 na Suécia, seguida por vitórias em 1962 no Chile e 1970 no México,
+                destacando-se pela habilidade e criatividade dos jogadores. O Brasil venceu novamente em 1994 nos
+                Estados Unidos, com uma final decidida nos pênaltis, e conquistou seu quinto título em 2002 na Coreia do
+                Sul/Japão, com uma equipe brilhante. Esses títulos reafirmam o Brasil como a nação mais vitoriosa no
+                futebol mundial.</p>
+            <div class="row py-3">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://estaticos.globoradio.globo.com/fotos/2022/02/b8b95b36-3135-4256-82a3-0f22e5cc2b76.jpg.640x360_q75_box-0%2C71%2C800%2C521_crop_detail.jpg"
+                            class="card-img-top" alt="1958">
+                        <div class="card-body">
+                            <h5 class="card-title">1958</h5>
+                            <p class="card-text">Copa do Mundo - Suécia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://lh5.googleusercontent.com/ceKTDp1L2Xou6dwS9bprtETCEYZ4Ym-FnOgq3SvXLCnNI-igFPQCnqK1Ip6AbgNc83X2s4PG7imF6KrK_HJlAIAkLu11ZgCI5cl1inKp4k9Dx1AzsUrD43fEOj5zSs-Xw4xhsPKynyK9ACLYGY2DcQ1CzGopSUMg_MWEwSczVWRmzHUZQD0LsCtiSg"
+                            class="card-img-top" alt="1962">
+                        <div class="card-body">
+                            <h5 class="card-title">1962</h5>
+                            <p class="card-text">Copa do Mundo - Chile</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://s2-gq.glbimg.com/A6FrRAuXJzkq54Dz8VVJCYGGR2c=/0x0:560x402/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_71a8fe14ac6d40bd993eb59f7203fe6f/internal_photos/bs/2022/A/q/61gPAbQcaiizJ62ySJ5g/b194392bdff662ae0683cbfeed818afb.jpeg"
+                            class="card-img-top" alt="1970">
+                        <div class="card-body">
+                            <h5 class="card-title">1970</h5>
+                            <p class="card-text">Copa do Mundo - México</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="https://media.gazetadopovo.com.br/2009/07/521bf1ab697fbecae6ae575cc3d20676-gpLarge.jpg"
+                            class="card-img-top" alt="1994">
+                        <div class="card-body">
+                            <h5 class="card-title">1994</h5>
+                            <p class="card-text">Copa do Mundo - Estados Unidos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="https://assets.goal.com/images/v3/blt1428a2757f1f81ba/Cafu-Brazil-2002.jpg?auto=webp&format=pjpg&width=3840&quality=60"
+                            class="card-img-top" alt="2002">
+                        <div class="card-body">
+                            <h5 class="card-title">2002</h5>
+                            <p class="card-text">Copa do Mundo - Coreia do Sul/Japão</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="py-3">Outros:</h3>
+            <p>Além das cinco Copas do Mundo, a Seleção Brasileira conquistou diversos outros títulos importantes. O
+                Brasil venceu a Copa América, a principal competição de seleções da América do Sul, várias vezes, com
+                destaque para os títulos de 1919, 1922, 1949 e mais recentemente em 2019. A seleção também brilhou na
+                Copa das Confederações, ganhando o torneio em 1997, 2005, 2009 e 2013. No cenário olímpico, o Brasil
+                conquistou a medalha de ouro nos Jogos Olímpicos em 2016 no Rio de Janeiro. Esses triunfos complementam
+                o legado de sucesso da seleção, consolidando sua posição como uma das maiores forças do futebol mundial.
+            </p>
+            <h4 class="py-3">Títulos Principais</h4>
+            <ul class="list-group">
+                <li class="list-group-item"><img
+                        src="https://static.vecteezy.com/system/resources/previews/013/518/660/non_2x/3d-illustration-cup-trophy-transparent-background-free-png.png"
+                        alt="" class="img-fluid" width="40px"><strong>Copa do Mundo:</strong> 1958, 1962, 1970, 1994,
+                    2002</li>
+                <li class="list-group-item"><img
+                        src="https://png.pngtree.com/png-clipart/20211009/original/pngtree-copa-america-conmebol-2021-argentina-png-image_6845977.png"
+                        alt="" class="img-fluid" width="40px"><strong>Copa América:</strong> 1919, 1922, 1949, 1989,
+                    1997, 1999, 2004, 2007, 2019</li>
+                <li class="list-group-item"><img
+                        src="https://i.pinimg.com/originals/b1/16/e5/b116e52734b551aca923874074598e3a.png" alt=""
+                        class="img-fluid" width="40px"><strong>Copa das Confederações:</strong> 1997, 2005, 2009, 2013
+                </li>
+                <li class="list-group-item"><img
+                        src="https://images.vexels.com/content/128327/preview/olympic-gold-medal-dc5934.png" alt=""
+                        class="img-fluid" width="40px"><strong>Olimpíadas:</strong> Ouro em 2016 (Rio de Janeiro), Ouro
+                    em 2020 (Tóquio)</li>
+                <li class="list-group-item"><img
+                        src="https://static.vecteezy.com/system/resources/previews/024/281/518/original/silver-trophy-cup-free-png.png"
+                        alt="" class="img-fluid" width="40px"><strong>Copa Pan-Americana:</strong> 1960</li>
+                <li class="list-group-item"><img
+                        src="https://images.vexels.com/content/127644/preview/first-place-gold-medal-5b816b.png" alt=""
+                        class="img-fluid" width="40px"><strong>Medalha de Ouro Pan-Americana:</strong> 1952</li>
+            </ul>
+        </div>
+
+        <div id="pele" class="pele conteudo text-center d-none">
+            <h2 class="py-3">PELÉ</h2>
+            <h3 class="py-3">Infância</h3>
+            <p>Edson Arantes do Nascimento, o Pelé, foi o maior jogador da história do futebol, personalidade mundial do
+                esporte e popularmente chamado de Rei do Futebol. Nasceu na cidade de Três Corações, em Minas Gerais, no
+                dia 23 de outubro de 1940. É filho de João Ramos do Nascimento (também ex-jogador de futebol, conhecido
+                como Dondinho) e Celeste Arantes do Nascimento. Morreu aos 82 anos, em 29 de dezembro de 2022, em São
+                Paulo.</p>
+            <p>Aos quatro anos de idade, Edson e sua família mudaram-se para Bauru, em São Paulo. Nessa época, ele era
+                chamado de Dico pela família e de Edson pelos amigos. Influenciado pelo pai, Dico sempre foi fã de
+                futebol e logo começou a fazer parte dos times de garotos que jogavam nas ruas de Bauru. Ele gostava de
+                atuar no gol, inspirado no goleiro José Lino da Conceição Faustino, o Bilé, amigo de time de seu pai, o
+                Vasco de São Lourenço (Minas Gerais).</p>
+            <p>Além dos jogos de futebol, durante a infância, o garoto ajudava a família como podia. O pai lesionou-se e
+                não continuou a jogar futebol, o que deixou a família em dificuldades. Para contribuir com a renda
+                familiar, Pelé trabalhou como engraxate em Bauru."</p>
+            <h3 class="py-3">Início da Carreira</h3>
+            <p>Destaque dos jogos nas ruas de Bauru, Pelé passou por algumas equipes amadoras durante sua infância, e,
+                aos 11 anos, o jogador Waldemar de Brito descobriu-o e convidou-o para a equipe que estava formando: o
+                Clube Atlético de Bauru. Passados poucos anos, Waldemar percebeu o enorme talento de Pelé e decidiu
+                levá-lo para um time maior, o Santos Futebol Clube.</a></p>
+            <p>Pelé começou a ser reconhecido nacionalmente ainda com 16 anos de idade. Em 1957, o garoto já era titular
+                do Santos e foi artilheiro do Campeonato Paulista, o mais jovem até hoje, marcando 36 gols. O Rei do
+                Futebol atuou durante quase toda sua carreira no Santos, entre 1956 a 1974. No período, ele levou o
+                clube a conquistar dez títulos estaduais e seis campeonatos nacionais (Taça Brasil e Torneio Robertão),
+                além de duas Copas Libertadores e dois Mundiais de Clubes, em 1962 e 1963.</p>
+            <figure class="py-3">
+                <img src="https://i0.wp.com/revistaatencao.com.br/wp-content/uploads/2022/12/image.png?resize=696%2C392&ssl=1"
+                    alt="" class="img-fluid img-border" width="100%">
+                <figcaption>Pelé aos 16 anos jogando pelo Santos</figcaption>
+            </figure>
+            <h3 class="py-3">Seleção Brasileira</h3>
+            <p>Passados dez meses da contratação de Pelé pelo Santos, o garoto foi convocado pela Seleção Brasileira
+                pela primeira vez para disputar a Copa Roca (atual Superclássico das Américas). A competição era um
+                torneio amistoso entre a Seleção Brasileira e a Seleção Argentina.</p>
+            <p>As duas partidas foram realizadas no Brasil. A primeira marcou a estreia de Pelé com a camisa do Brasil e
+                foi realizada no Maracanã. A Argentina venceu por 2 a 1, e o gol brasileiro foi marcado por Pelé. Na
+                partida de volta, no Estádio do Pacaembu, o Brasil venceu por 2 a 0, com um gol de Pelé e outro de
+                Mazzola. Foi o primeiro título de Pelé pela Seleção Brasileira.</p>
+            <figure class="py-3">
+                <img src="https://static.gazetaesportiva.com/uploads/imagem/2020/04/24/url-906x1024.jpeg" alt=""
+                    class="img-fluid img-border" width="100%">
+                <figcaption>Pelé em seus primeiros anos pela seleção brasileira</figcaption>
+            </figure>
+            <h3 class="py-3">Copas do Mundo</h3>
+            <p>Pelé conquistou três Copas do Mundo com a Seleção Brasileira, consolidando seu status como uma lenda do
+                futebol. Em 1958, na Suécia, aos 17 anos, ele foi um dos protagonistas da vitória, marcando seis gols,
+                incluindo dois na final contra a Suécia. Em 1962, no Chile, apesar de uma lesão que o afastou da maioria
+                das partidas, ele contribuiu com um gol na final contra a Tchecoslováquia. Seu retorno triunfante veio
+                em 1970, no México, onde liderou a equipe com uma performance brilhante, incluindo quatro gols, e ajudou
+                o Brasil a vencer a final contra a Itália por 4 a 1.</p>
+            <figure class="py-3">
+                <img src="https://esportenewsmundo.com.br/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-03-at-16.23.08.jpeg"
+                    alt="" class="img-fluid img-border" width="100%">
+                <figcaption>Pelé com suas três conquistas da Copa do Mundo</figcaption>
+            </figure>
+            <h3 class="py-3">Morte</h3>
+            <p>Pelé faleceu em 29 de dezembro de 2022, aos 82 anos, após uma longa batalha contra o câncer de cólon. Sua
+                morte marcou o fim de uma era para o futebol mundial, deixando um legado incomparável de conquistas,
+                incluindo uma influência que transcendeu o esporte. Pelé não era apenas um atleta extraordinário, mas
+                também um embaixador global do futebol, conhecido por seu carisma, espírito esportivo e contribuição
+                inestimável ao desenvolvimento do jogo em todo o mundo. Sua morte foi sentida profundamente por fãs,
+                jogadores e líderes globais, que prestaram homenagens emocionantes ao "Rei do Futebol."</p>
+            <h3 class="py-3">Títulos Pela Seleção</h3>
+            <ul class="list-group">
+                <li class="list-group-item"><img
+                        src="https://static.vecteezy.com/system/resources/previews/013/518/660/non_2x/3d-illustration-cup-trophy-transparent-background-free-png.png"
+                        alt="" class="img-fluid" width="40px"><strong>Copa do Mundo:</strong> 1958, 1962, 1970</li>
+                <li class="list-group-item"><img
+                        src="https://upload.wikimedia.org/wikipedia/en/5/57/Roca_cup_trophy.png" alt=""
+                        class="img-fluid pe-2" width="40px"><strong>Copa Roca:</strong> 1957</li>
+                <li class="list-group-item"><img
+                        src="https://png.pngtree.com/png-clipart/20231120/original/pngtree-silver-fair-play-cup-award-png-image_13663157.png"
+                        alt="" class="img-fluid" width="40px"><strong>Copa do Atlântico:</strong> 1960</li>
+                <li class="list-group-item"><img
+                        src="https://static.vecteezy.com/system/resources/previews/041/856/368/non_2x/ai-generated-silver-trophy-isolated-on-white-background-free-png.png"
+                        alt="" class="img-fluid" width="40px"><strong>Taça Oswaldo Cruz</strong> 1958, 1962, 1968</li>
+                <li class="list-group-item"><img
+                        src="https://png.pngtree.com/png-clipart/20230124/original/pngtree-d-rendering-realistic-golden-trophy-prize-to-winner-front-view-perspective-png-image_8929030.png"
+                        alt="" class="img-fluid pe-1" width="40px"><strong>Taça Bernardo O'Higgins:</strong> 1959, 1961
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="rodape mt-auto py-3">
+        <div class="container-fluid">
+            <h3>PRINCIPAIS PATROCINADORES</h3>
+            <div class="row py-4">
+                <div class="col-6 col-md-3 d-flex justify-content-center py-3">
+                    <a href="https://www.nike.com.br/" target="_blank">
+                        <img src="https://pngimg.com/uploads/nike/small/nike_PNG7.png" alt="logo-nike" class="img-fluid"
+                            style="width: 100px">
+                    </a>
+                </div>
+                <div class="col-6 col-md-3 d-flex justify-content-center py-3">
+                    <a href="https://www.guaranaantarctica.com.br/pt-br" target="_blank">
+                        <img src="https://www.guaranaantarctica.com.br/sites/g/files/wnfebl5706/files/styles/webp/public/Guaran%C3%A1/Tempor%C3%A1rio/MicrosoftTeams-image%20%284%29.png.webp?itok=dB25u61u"
+                            alt="logo-guaraná" class="img-fluid" style="width: 100px">
+                    </a>
+                </div>
+                <div class="col-6 col-md-3 d-flex justify-content-center py-3">
+                    <a href="https://vivo.com.br/para-voce" target="_blank">
+                        <img src="https://logodownload.org/wp-content/uploads/2014/02/vivo-logo-0.png" alt="logo-vivo"
+                            class="img-fluid" style="width: 100px">
+                    </a>
+                </div>
+                <div class="col-6 col-md-3 d-flex justify-content-center py-3">
+                    <a href="https://www.itau.com.br/" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/2023_Ita%C3%BA_Unibanco_Logo.png"
+                            alt="logo-itaú" class="img-fluid" style="width: 80px">
+                    </a>
+                </div>
+            </div>
+            <div class="divisao-container pb-4">
+                <div class="divisao-1 w-100"></div>
+                <div class="divisao-2 w-100"></div>
+            </div>
+            <div class="contatos row d-flex justify-content-center align-items-lg-center">
+                <h4 class="col-12 d-flex justify-content-center align-items-center pb-3">Contatos:</h4>
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <p class="px-1"><strong>Email:</strong> selecaobrasileira@gmail.com</p>
+                </div>
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <p class="px-1"><strong>Telefone:</strong> (82) 98809-4715</p>
+                </div>
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <p class="px-1"><strong>Instagram:</strong><a href="https://www.instagram.com/cbf_futebol/"
+                            class="contatos-link link-underline link-underline-opacity-0" target="_blank">
+                            cbf_futebol</a></p>
+                </div>
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <p class="px-1"><strong>Desenvolvedor:</strong> <a href="https://github.com/lleandrogon"
+                            class="contatos-link link-underline link-underline-opacity-0" target="_blank">
+                            lleandrogon</a></p>
+                </div>
+            </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

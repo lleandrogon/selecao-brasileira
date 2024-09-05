@@ -1,0 +1,194 @@
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+header.dark-mode {
+    background-color: #F2B705;
+}
+
+body.dark-mode nav {
+    background-color: #444444;
+}
+
+body.dark-mode .list-group {
+    background-color: #444444;
+    color: #ffffff;
+}
+
+body.dark-mode .card-body {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+body.dark-mode .list-group-item {
+    background-color: #444444;
+    color: #ffffff;
+}
+
+body.dark-mode .list-group-item:not(:last-child) {
+    border-bottom: 1px solid #555555;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+.cabecalho {
+    background-color: #F2B705;
+    height: 12vh;
+}
+
+.cbf-logo img {
+    height: auto;
+}
+
+.botao-menu {
+    background-color: #056CF2;
+    color: white;
+    font-size: 1.3em;
+    border: none;
+}
+
+.btn {
+    width: auto;
+}
+
+.theme-container {
+    padding: 0 15px;
+}
+
+.menu-ativo {
+    background-color: #191659;
+}
+
+.navegacao {
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #056CF2;
+}
+
+.navegacao ul li {
+    background-color: #056CF2;
+}
+
+.navegacao ul li a {
+    color: white;
+}
+
+.navegacao ul li a:hover {
+    color: #F2B705;
+}
+
+.oculto {
+    display: none;
+}
+
+.conteudo {
+    border: 2px solid #056CF2;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);;
+    height: auto;
+    width: 70vw;
+    padding: 20px;
+}
+
+.conteudo .img-border {
+    border: none;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 0 5px #F2B705, 0 0 0 10px #03A64A;
+}
+
+figcaption {
+    margin-top: 10px;
+}
+
+.uniforme img {
+    max-height: 500px;
+    max-width: 500px;
+}
+
+.card {
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding-bottom: 0;
+}
+
+.card-text {
+    margin-bottom: 0;
+}
+
+.rodape {
+    background-color: #056CF2;
+    color: white;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.rodape h3 {
+    text-align: center;
+}
+
+.divisao-1 {
+    background-color: #F2B705;
+    height: 5px;
+}
+
+.divisao-2 {
+    background-color: #03A64A;
+    height: 5px;
+}
+
+.rodape h4 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.rodape p {
+    margin: 0.5rem 0;
+}
+
+.contatos-link {
+    color: white;
+}
+
+.contatos-link:hover {
+    color: #F2B705;
+}
+
+@media (min-width: 769px) {
+    .historia img {
+        width: 50%;
+    }
+
+    .pele figure img {
+        width: 65%;
+        height: 60vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .historia img {
+        width: 100%;
+    }
+
+    .navegacao {
+        font-size: 12px;
+    }
+}
